@@ -8,8 +8,6 @@ trigger:
 resources:
 - repo: self
 
-variables:
-  tag: '$(Build.BuildId)'
 
 stages:
 - stage: Build
@@ -27,6 +25,4 @@ stages:
        repository: shakeriqbal2015/pipelines-javascript-docker
        dockerfile: '**/dockerfile'
        containerRegistry:regishaker
-       tags: |
-         $(Build.BuildId)
-          latest
+     
