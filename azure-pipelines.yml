@@ -24,5 +24,5 @@ stages:
        command: buildAndPush
        repository: shakeriqbal2015/pipelines-javascript-docker
        dockerfile: '**/dockerfile'
-       containerRegistry:regishaker
+       containerRegistry: regishaker
      
