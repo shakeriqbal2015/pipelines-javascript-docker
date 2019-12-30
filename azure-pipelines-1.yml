@@ -26,6 +26,7 @@ stages:
         command: buildAndPush
         dockerfile: '**/Dockerfile'
         containerRegistry: AZCON
+        repository: demos/shaker
         tags: |
           $(Build.BuildId)
           latest
